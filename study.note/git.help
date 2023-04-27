@@ -3,3 +3,5 @@ $ git remote add studyc  git@github.com:lhqhub/studyc.git
 	添加远程仓库
  git push -u studyc master
 	推送到远程仓库
+git pull studyc master
+	从远程仓库更新本地仓库.
