@@ -1,1 +1,23 @@
+setjmp函数的用法
+1, 定义一个jmp_buf 对象用来保存运行环境.
+		static jmp_buf buf ;
+2, setjmp(buf) 
+    setjmp 函数初次调用返回0, 由longjmp 函数调用则返回longjmp
+	函数的第二个参数值.
+		if(setjmp(buf)) { dosomthing ;}
+			esle
+			{dosomthing ;}
+		switch(setjmp(buf)){
+			case N :
+				dosomthing ;
+				break; 
+			case N :
+				dosomthing ;
+				break ;
+			}
+
+3, longjmp(jmp_buf buf, int n) 返回到调用setjmp 函数的语句处,此时setjmp
+函数不再返回0 , 而是返回 n .
+
+setjmp.c
 

@@ -1,0 +1,5 @@
+
+$ git remote add study.c  git@github.com:lhqhub/study.c.git
+	添加远程仓库
+ git push -u study.c master
+	推送到远程仓库
